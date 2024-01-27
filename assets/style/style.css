@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width:100%;
+    height:84px;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #1A1E1F;
+    position: fixed;
+    margin-top: 0;
+    /* gap:300px; */
+    z-index: 2;
+    
+}
+
+
+
+.header .logo{
+    width:200px;
+    display:flex;
+
+}
+
+.header #TBC{
+    color:#04A3E0;
+}
+
+.header .logo:hover{
+   cursor: pointer;
+
+}
+.header  figure{
+    width:50%;
+    display:flex;
+    gap:10px;
+    align-items: center;
+
+}
+
+.header  .log figure img{
+    width:100%;
+    object-fit:fill;
+    aspect-ratio:3/2;
+    object-fit:contain;
+
+}
+.header .logo figure p{
+   font-size: x-large; 
+   color:white;
+}
+
+.header .navigation{
+    display: block;
+}
+
+
+
+.header .navigation ul{
+    width:100%;
+    display:flex;
+    align-items: baseline;
+    gap:30px;
+
+}
+
+.header  .navigation ul li{
+    color:white;
+    text-decoration: none;
+    list-style:none;
+    
+}
+
+.header  .navigation ul li:hover{
+    cursor: pointer;
+    color: #04A3E0;
+    
+
+}
+
+.burger-menu{
+    display: none;
+}
+
+.burger-menu.activeBM{
+    display: flex;
+    flex-direction: column;
+}
+
+#check{
+    display: none;
+    
+}
+
+.open-BM{
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .TbcPages li{
+        display: none;
+        
+    }
+    .activeBM {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right:0 !important;
+            width: 50% !important;
+            background-color: #222222;
+    }
+    .header .navigation ul{
+        width: unset;
+    }
+
+    .TbcPages.activeBM{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: end !important;
+        justify-content: center;
+        padding-right: 5px;
+    }
+    .activeBM li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .burger-menu{
+        height: 26px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    right: 32px;
+    z-index: 25;
+    transition: all 0.33s ease-out
+    }
+    #check:checked~.TbcPages{
+    
+        right: 0;
+    }
+    .open-BM{
+        display: block;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .bm-line1{
+        align-self: flex-start;
+    width: 50%;
+    height: 4px;
+    transform-origin: right;
+    background-color: white;
+    
+    }
+    .bm-line2{
+        align-self: flex-start;
+    width: 100%;
+    height: 4px;
+    transform-origin: right;
+    background-color: white;
+    }
+    .bm-line3{
+        align-self: flex-end;
+    width: 50%;
+    height: 4px;
+    transform-origin: right;
+    background-color: white;
+    }
+
+    .logo{
+        width: 100px;
+    }
+    .logo p{
+        font-size: small;
+    }
+   
+  }
+
+
+
+
+.container{
+    margin-top: 84px;
+    width:100%;
+    float: left;
+    height: auto;
+}
+
+.container .big-image{
+    width:100%;
+    height:400px;
+    background-image: url("./../images/tbcteam.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container .big-image h2{
+    color:white;
+    padding: 30px 300px;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    align-items: start;
+}
+
+@media only screen and (max-width: 800px) {
+    .container .big-image h2{
+        padding: 20px 130px;
+        font-size: 25px;
+       
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .container .big-image h2{
+        padding: 10px 70px;
+        font-size: 15px;
+       
+    }
+  }
+
+.container .article-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    background-color: #2B2B2B;
+}
+.container #article{
+    width:60%;
+   font-size:30px;
+   color: white;
+   padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .container #article{
+        font-size:24px;
+
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .container #article{
+        font-size:20px;
+
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container #article{
+        font-size:17px;
+
+    }
+  }
+.container #seemore{
+    color: #04A3E0;
+   width:100%;
+   font-size:x-large;
+   font-family: 'Courier New', Courier, monospace;
+   padding: 30px;
+}
+
+.container .seemore-div{
+    width:60%;
+    display: flex;
+    text-align: start;
+}
+.container #seemore:hover{
+   cursor: pointer;
+   
+}
+
+.courses-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    background-color: #161616;
+}
+.courses-container .learning-courses{
+    width: 70%;
+    color:white;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    /* margin-left: 230px; */
+    display: flex;
+    align-items: start;
+}
+.courses{
+    width:100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap:30px; */
+}
+
+.courses .course-articles {
+    width:350px;
+    height:500px;
+    background-color:#161616;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius:10px ;
+    border: solid #555555 2px;
+    align-items:center;
+    margin: 30px;
+    gap:60px;
+    
+}
+
+/* @media only screen and (max-width: 700px) {
+    .courses .course-articles{
+        width: 350px;
+       
+    }
+    .courses{
+        width:100%;
+        gap:10px;
+
+    }
+  } */
+
+@media only screen and (max-width: 700px) {
+    .courses .course-articles{
+        width: 350px;
+       
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .courses{
+        width: 100%;
+    }
+    .courses .course-articles{
+        width: 100% !important;
+
+       
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .courses .course-articles{
+        width: 400px;
+       
+    }
+  }
+.course-name{
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    gap:20px;
+    padding: 0 10px;
+    
+}
+.courses .course-articles h3{
+    color:white;
+}
+.courses .course-articles p{
+    color:white;
+}
+.courses .course-articles .course-image{
+    width:100%;
+    
+}
+.courses .course-articles .course-image img{
+    width:100%;
+    object-fit:fill;
+    aspect-ratio:3/2;
+    object-fit:contain;
+}
+
+.courses .course-articles .details-arrow{
+    width:30px;
+}
+.courses .course-articles .details-arrow img{
+    width:100%;
+    object-fit:fill;
+    aspect-ratio:3/2;
+    object-fit:contain;
+}
+.courses .course-articles .for-details{
+    width:100%;
+    display:flex;
+    
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+}
+.courses .course-articles .for-details p{
+    color:#04A3E0;
+}
+
+.courses .course-articles .for-details p:hover{
+    cursor: pointer;
+}
+
+
+
+
+.slideshow-container {
+    width: 100%;
+    /* height:350px; */
+    position: relative;
+    margin: auto;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px 0;
+    
+  }
+
+  .slideshow-container h2 {
+   color: white;
+   width:70%;
+    
+  }
+
+
+
+  .parent-div{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap:30px;
+    
+  }
+
+  @media only screen and (max-width: 750px) {
+    .mySlides {
+        flex-direction: column;
+    }
+    .prev, .next{
+        display: none;
+    }
+
+  }
+  
+  .mySlides{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+
+  }
+  .mySlides figure{
+    width:200px;
+    height: fit-content;
+    
+  }
+
+  .mySlides figure img{
+    width:100%;
+    object-fit:fill;
+    object-fit:contain;
+    aspect-ratio: 3/2;
+    height: fit-content;
+    
+  }
+
+
+
+  
+  /* Next & previous buttons */
+   .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    background-color: transparent;
+    border: 0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-size: xx-large;
+    color: white;
+  }
+
+ .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: auto;
+    padding: 16px;
+    border: 0;
+    margin-top: -22px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-size: xx-large;
+    color: white;
+
+  }
+  
+  /* Position the "next button" to the right */
+  .slideshow-container .next {
+   
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .slideshow-container .prev:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+  }
+  .slideshow-container .next:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+  }
+  
+  
+  
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    /* margin: 0 2px; */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    .mySlides {flex-direction: column;}
+  }
+
+  .accordion-container{
+    width:100%;
+    
+    background-color:#161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding-block: 30px;
+    
+  }
+
+.accordion-container p{
+    color:white;
+    font-size: large;
+
+}
+
+.accordion-container .most-asked{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.accordion-container .most-asked p{
+    font-size: 24px;
+}
+
+.accordion-container .most-asked .all-questions{
+    color: #04A3E0;
+}
+
+@media screen and (max-width:580px){
+     .all-questions{
+        /* font-size: 14px !important;
+         */
+            display: none !important;
+        }
+        .most-asked p {
+            width: 100%;
+            font-size: 20px !important;
+        }
+    .questions p{
+        font-size: 14px !important;
+
+    }
+}
+
+.accordion-container .most-asked .all-questions:hover{
+    cursor:pointer;
+}
+
+.accordion-container .questions-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:40px;
+    background-color: #161616;
+    
+    
+}
+
+.accordion-container .questions{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:100px;
+    width:60%;
+   
+}
+
+.accordion-container .questions:hover{
+    cursor:pointer;
+}
+
+.accordion-container .accordion-arrow{
+    transform: rotate(90deg);
+    font-size: 30px;
+}
+
+
+.accordion-container  .lines{
+    width:60%;
+    background-color: lightgray;
+    height: 0.5px;
+}
+
+.questions-container .answers{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden; 
+    max-height: 0;
+    background-color: #161616;
+    position: relative;
+    transition: all 1s ease;
+    
+}
+
+.answers h4{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: start;
+}
+
+.active .answers{
+    max-height:1000px;
+    
+}
+
+.footer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    background-color:#1A1E1F;
+    padding-block: 30px;
+}
+.footer .left-side{
+   
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    gap:10px;
+}
+
+.footer .left-side p{
+    color:white;
+    cursor: pointer;
+    
+}
+.footer .left-side p:hover{
+    
+    cursor: pointer;
+}
+
+
+.footer .right-side{
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    gap:10px;
+
+}
+
+
+.footer .left-side .conditions:hover{
+    color:#717171;
+    transition: all 0,7s ease-in;
+
+}
+.footer .right-side button{
+    background-color: #04A3E0;
+    width:150px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height:50px;
+    color:white;
+    cursor: pointer;
+}
+
+.footer .footer-content{
+    display:flex;
+    width:100%;
+
+}
+
+.footer-images-content{
+    display:flex;
+    gap:10px;
+    padding-right: 0;
+
+}
+
+.footer-tbc-logo{
+    /* width */
+    margin-left: 18%;
+
+}
+
+#all-questions{
+    display: none;
+}
+
+@media screen and (max-width:580px){
+    #all-questions {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color:#161616;
+    color: #04A3E0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+}
+ @media screen and (max-width:580px){
+    .right-side{
+        flex-direction: row-reverse;
+
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+ 
