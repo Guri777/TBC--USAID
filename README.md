@@ -28,3 +28,31 @@ HTML5: Chosen for its semantic structure and support for modern web development.
 CSS3: Provides styling and layout capabilities, allowing for a visually appealing and responsive design.
 
 JavaScript: Adds interactivity to the website, enhancing the user experience. Used for handling events, such as opening the burger menu and controlling the slideshow.
+
+Instructions to Launch the Project:
+
+1.Clone the Repository:
+git clone   https://github.com/Guri777/TBC--USAID.git
+cd /TBC--USAID
+
+2.Open the project:
+Navigate to the project folder and open the index.html file in your preferred web browser.
+Open the Project:
+
+for Windows:
+start index.html
+
+for Linux
+xdg-open index.html
+
+for macOS
+open index.html
+
+or just Double-click on the index.html file in project's folder.
+
+
+Interact with JavaScript Features:
+Check the interactivity provided by JavaScript, such as the burger menu, accordion and slideshow.
+
+Note on Browser Compatibility:
+Ensure that you are using a modern web browser for the best experience. The project is designed to be compatible with modern browsers such as Chrome, Firefox, Safari, and Edge.
