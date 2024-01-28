@@ -28,6 +28,11 @@ HTML5: Chosen for its semantic structure and support for modern web development.
 
 CSS3: Provides styling and layout capabilities, allowing for a visually appealing and responsive design.
 
+
+NormalizeCSS : 
+Different web browsers have their default styles for HTML elements, which can result in inconsistencies in how our web pages are rendered. normalize.css helps us address these discrepancies by providing a consistent baseline, ensuring that our project looks and behaves consistently across popular browsers.
+
+
 JavaScript: Adds interactivity to the website, enhancing the user experience. Used for handling events, such as opening the burger menu and controlling the slideshow.
 
 
